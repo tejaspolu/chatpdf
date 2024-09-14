@@ -1,16 +1,16 @@
-# ChatPDF
-**ChatPDF** is a serverless application that allows users to upload PDFs, extract their content as text, and ask questions about the PDF using LangChain, with answers based on the PDF content.
+# chatpdf
+**chatpdf** is a serverless application that allows users to upload pdfs and ask questions about the document
 
-## Features
-- Upload PDFs and extract text
-- Store PDF text in Amazon S3
-- Ask questions about the PDF content using LangChain for responses
-- Conversation history saved in DynamoDB
-- User authentication via Amazon Cognito
-- Backend powered by Express.js
+## features
+- upload pdfs and extract text
+- store pdf text in amazon s3
+- ask questions about the pdf content using langchain for responses
+- conversation history saved in dynamodb
+- user authentication via amazon cognito
+- backend powered by express.js
 
-## Tech Stack
-- **Backend**: Express.js, Node.js, AWS Lambda, LangChain
-- **Storage**: Amazon S3, DynamoDB
-- **Authentication**: Amazon Cognito
-- **PDF Processing**: OpenCV
+## tech stack
+- **backend**: express.js, node.js, aws lambda, langchain
+- **storage**: amazon s3, dynamodb
+- **authentication**: amazon cognito
+- **pdf processing**: opencv
