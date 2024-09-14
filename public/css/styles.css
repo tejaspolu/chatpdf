@@ -1,0 +1,50 @@
+/* public/css/styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  form input[type="email"],
+  form input[type="password"],
+  form input[type="file"],
+  form input[type="text"] {
+    width: 300px;
+    padding: 8px;
+    margin: 5px 0;
+  }
+  
+  form input[type="submit"],
+  form button {
+    padding: 8px 16px;
+  }
+  
+  #chat-window {
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 400px;
+    overflow-y: scroll;
+    margin-bottom: 20px;
+  }
+  
+  .user-message,
+  .bot-response {
+    margin: 10px 0;
+  }
+  
+  .user-message {
+    text-align: right;
+  }
+  
+  .bot-response {
+    text-align: left;
+  }
+  

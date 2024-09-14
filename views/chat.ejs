@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chat with the Bot</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <h1>Chat with the Bot</h1>
+  <p>Welcome, <%= session.user %> | <a href="/logout">Logout</a></p>
+  <form method="post" action="/new-document" style="display: inline;">
+    <button type="submit">Upload New Document</button>
+  </form>
+  <% if (error) { %>
+    <p class="error"><%= error %></p>
+  <% } %>
+  <div id="chat-window">
+    <% conversation.forEach(function(message) { %>
+      <div class="user-message">
+        <strong>You:</strong> <%= message.question %>
+      </div>
+      <div class="bot-response">
+        <strong>Bot:</strong> <%= message.answer %>
+      </div>
+    <% }); %>
+  </div>
+  <form method="post" action="/chat">
+    <input type="text" name="question" placeholder="Ask a question..." required /><br /><br />
+    <input type="submit" value="Send" />
+  </form>
+</body>
+</html>

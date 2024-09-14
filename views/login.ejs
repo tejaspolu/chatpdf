@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <h1>Login</h1>
+  <% if (error) { %>
+    <p class="error"><%= error %></p>
+  <% } %>
+  <form method="post" action="/login">
+    <label>Email:</label><br />
+    <input type="email" name="email" required /><br />
+    <label>Password:</label><br />
+    <input type="password" name="password" required /><br /><br />
+    <input type="submit" value="Login" />
+  </form>
+  <p>Don't have an account? <a href="/register">Register here</a>.</p>
+</body>
+</html>

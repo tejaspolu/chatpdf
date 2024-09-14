@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Upload PDF</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <h1>Upload PDF</h1>
+  <p>Welcome, <%= session.user %> | <a href="/logout">Logout</a></p>
+  <% if (error) { %>
+    <p class="error"><%= error %></p>
+  <% } %>
+  <form method="post" action="/upload" enctype="multipart/form-data">
+    <input type="file" name="pdf" accept=".pdf" required /><br /><br />
+    <input type="submit" value="Upload" />
+  </form>  
+</body>
+</html>
